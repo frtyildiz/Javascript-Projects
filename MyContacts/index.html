@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./skeleton/normalize.css">
+    <link rel="stylesheet" href="./skeleton/skeleton.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Contacts Application</h1>
+
+        <div class="info">Success</div>
+
+        <form id="form-contact">
+            <div>
+                <label for="fName">First Name: </label>
+                <input id="fName" type="text" class="u-full-width">
+            </div>
+            <div>
+                <label for="lName">Last Name: </label>
+                <input id="lName" type="text" class="u-full-width">
+            </div>
+            <div>
+                <label for="eMail">E Mail: </label>
+                <input id="eMail" type="text" class="u-full-width">
+            </div>
+            <div>
+                <input class="button-primary u-full-width addButton" type="submit" value="Add">
+            </div>
+        </form>
+
+        <hr>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>E Mail</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="contact-list">
+                <tr>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>A</td>
+                    <td>
+                        <button class="btn btn--edit"><i class="fa-solid fa-user-pen"></i></button>
+                        <button class="btn btn--delete"><i class="fa-solid fa-user-minus"></i></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="myContacts.js"></script>
+</body>
+</html>
