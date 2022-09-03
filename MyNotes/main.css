@@ -1,0 +1,118 @@
+:root
+{
+    --main-color:#2676ac;
+    --main-color-light:#d1dbff;
+    --accent-color:rgba(243, 156, 18, 1.0);
+    --accent-color-light:rgb(243, 182, 85);
+}
+
+*
+{
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lora', serif;
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-title
+{
+    font-size: 3rem;
+    color:white
+}
+
+.header, .form
+{
+    min-height: 2vh;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item
+{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.btn-add
+{
+    color:var(--accent-color);
+    cursor: pointer;
+}
+
+.btn-add:hover
+{
+    color:white;
+    background-color: var(--accent-color);
+}
+
+.note-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-list
+{
+    list-style: none;
+    min-width: 40%;
+}
+
+.note-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.note
+{
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.note-btn
+{
+    background-color: var(--accent-color);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.del-btn
+{
+    background-color: rgb(253, 80, 80);
+}
+
+.note-completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-solid
+{
+    pointer-events: none;
+}
+
+.del
+{
+    transform: scale(0);
+}
